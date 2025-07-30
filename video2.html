@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Video Page - YouTube Clone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      background-color: #f9f9f9;
+    }
+    .video-title {
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .channel-info img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+    }
+    .sidebar-video img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .sidebar-video {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+      <div class="row mt-1" style="height: 8vh;">
+      <div class="col-2 bg-transparent">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <!-- <img src="" alt="logo" width="50"> -->
+           <i class="fa-brands fa-youtube text-danger"></i>
+          <span class="ms-2 fw-bold">
+            <h4>YouTube</h4>
+          </span>
+        </a>
+      </div>
+      <div class="col-6 mx-auto bg-transparent">
+        <form class="d-flex mx-auto w-50">
+          <input class="form-control me-2" type="search" placeholder="Search" style="width: 900px;">
+          <button class="btn btn-outline-secondary" type="submit">Search</button>
+        </form>
+      </div>
+      <div class="col-2 bg-transparent">
+        <ul type="none">
+          <li class="bg-light ms-6 p-2 rounded-2 my-1 fs-6" style="width: 80px; border-radius: 40px;">
+            <a href="" class="nav-link"><i class=""></i> Create</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  <div class="row mt-3">
+    <!-- Main Video Area -->
+    <div class="col-md-8">
+      <div class="ratio ratio-16x9 mb-3">
+        <iframe src="video/s1.mp4" title="YouTube video" allowfullscreen></iframe>
+      </div>
+
+      <div class="video-title mb-2">My Sample Video Title</div>
+      <div class="d-flex justify-content-between text-muted mb-3">
+        <span>1,234,567 views • Jul 27, 2025</span>
+        <div>
+          <button class="btn btn-outline-dark btn-sm me-2">👍 123K</button>
+          <button class="btn btn-outline-dark btn-sm">👎</button>
+        </div>
+      </div>
+
+      <div class="channel-info d-flex align-items-center justify-content-between mb-3 p-3 bg-light rounded">
+        <div class="d-flex align-items-center">
+          <img src="https://via.placeholder.com/45" alt="Channel">
+          <div class="ms-2">
+            <div><strong>Channel Name</strong></div>
+            <small class="text-muted">1M subscribers</small>
+          </div>
+        </div>
+        <button class="btn btn-danger">Subscribe</button>
+      </div>
+
+      <p class="bg-white p-3 rounded"> Mix
+                  | Akshay Kumar | Amyra Dastur | BPraak | 
+                  B Praak, Akshay Kumar, Sukhwinder Sukhi,.</p>
+    </div>
+
+    <!-- Suggested Videos -->
+    <div class="col-md-4">
+      <div class="sidebar-video d-flex">
+        <img src="img/s1.jpeg"  class="me-2 w-50 h-100" alt="thumb">
+        <div>
+          <div><strong> Mix
+                  | Akshay Kumar|Zohrajabeen
+                  B Praak, Akshay Kumar, Sukhwinder Sukhi,</strong></div>
+          <small>Channel • 456K views</small>
+        </div>
+      </div>
+      <div class="sidebar-video d-flex">
+        <img src="img/s11.jpg"class="me-2 w-50 h-100" alt="thumb">
+        <div>
+          <div><strong> Kajal Pandey Tried to Roast Me... BIG MISTAKE 😭🔥
+                  DEVIKA GUPTA</strong></div>
+          <small>Channel • 789K views</small>
+        </div>
+      </div>
+         <div class="sidebar-video d-flex">
+        <img src="img/s1.jpeg"class="me-2 w-50 h-100" alt="thumb">
+        <div>
+          <div><strong> Kajal Pandey Tried to Roast Me... BIG MISTAKE 😭🔥
+                  DEVIKA GUPTA</strong></div>
+          <small>Channel • 456K views</small>
+        </div>
+      </div>
+      <div class="sidebar-video d-flex">
+        <img src="img/s11.jpg" class="me-2 w-50 h-100" alt="thumb">
+        <div>
+           <div><strong> Kajal Pandey Tried to Roast Me... BIG MISTAKE 😭🔥
+                  DEVIKA GUPTA</strong></div>
+          <small>Channel • 789K views</small>
+        </div>
+      </div>
+         <div class="sidebar-video d-flex">
+        <img src="img/s1.jpeg" class="me-2 w-50 h-100" alt="thumb">
+        <div>
+          <div><strong>Related Video Title 1</strong></div>
+          <small>Channel • 456K views</small>
+        </div>
+      </div>
+      <div class="sidebar-video d-flex">
+        <img src="img/s11.jpg"class="me-2 w-50 h-100" alt="thumb">
+        <div>
+           <div><strong> Kajal Pandey Tried to Roast Me... BIG MISTAKE 😭🔥
+                  DEVIKA GUPTA</strong></div>
+          <small>Channel • 789K views</small>
+        </div>
+      </div>
+      
+      <!-- Add more suggestions as needed -->
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
